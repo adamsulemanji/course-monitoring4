@@ -1,0 +1,9 @@
+fastapi
+mangum
+boto3
+uvicorn
+bs4
+requests
+pydantic[email]
+jose
+python-jose

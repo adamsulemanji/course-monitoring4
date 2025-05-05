@@ -5,8 +5,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "watch": "tsc -w",
-    "test": "jest"
+    "watch": "tsc -w"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
