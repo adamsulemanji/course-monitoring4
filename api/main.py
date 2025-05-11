@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from mangum import Mangum
 from fastapi.middleware.cors import CORSMiddleware
-from routes import base, auth, protected
+from routes import base, auth, protected, course, notification
 
 app = FastAPI(title="Course Monitoring API")
 
@@ -34,6 +34,8 @@ app.add_middleware(
 
 app.include_router(protected.router, prefix="/protected", tags=["Protected"])
 app.include_router(auth.router, prefix="/auth", tags=["Auth"])
+app.include_router(course.router, prefix="/courses", tags=["Courses"])
+app.include_router(notification.router, prefix="/notifications", tags=["Notifications"])
 app.include_router(base.router, tags=["Base"])
 
 

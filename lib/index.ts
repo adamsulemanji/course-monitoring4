@@ -9,3 +9,11 @@ export class CourseMonitoring4 extends Construct {
    
   }
 }
+
+export * from './course-monitoring-stack';
+export * from './ddb';
+export * from './cognito';
+export * from './eventbridge';
+export * from './apigateway';
+export * from './sns';
+export * from './cloudfront';
