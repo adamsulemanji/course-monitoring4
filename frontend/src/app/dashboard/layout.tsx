@@ -1,6 +1,9 @@
 import { ReactNode } from "react";
-import ProtectedRoute from "@/components/protected-route";
-
+// Temporarily commenting out ProtectedRoute for development
+// import ProtectedRoute from "@/components/protected-route";
+ 
 export default function DashboardLayout({ children }: { children: ReactNode }) {
-  return <ProtectedRoute>{children}</ProtectedRoute>;
+  // Temporarily disabled auth protection
+  // return <ProtectedRoute>{children}</ProtectedRoute>;
+  return <>{children}</>;
 } 
